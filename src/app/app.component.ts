@@ -16,6 +16,11 @@ export class AppComponent implements AfterViewInit {
   @ViewChild(WorksComponent) child:any;
   
   // for @Output and EventEmitter
+  message!:String;
+
+  receiveMsg($event:any){
+    this.message = $event;
+  }
 
 
   constructor(private cdr:ChangeDetectorRef){}
