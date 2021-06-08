@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorksComponent implements OnInit {
 
+  data:String = "The value has come from child component(works component) to parent component. I have kept blank works template and used it in parent to make it child and passed its data in parent component then use it in parent template";
+
   constructor() { }
 
   ngOnInit(): void {

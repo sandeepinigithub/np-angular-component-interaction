@@ -1,2 +1,19 @@
 <app-header></app-header>
+<app-features [userName]="name"></app-features>
+
+<app-works></app-works>
+<div class="container my-5">
+    <h3 class="text-center text-black-50 mb-5">Component Interaction @ViewChild()</h3>
+    <div class="row m-auto justify-content-center">
+        <div class="card" style="width: 18rem">
+            <div class="card-body">
+                <h5>@ViewChild Decorator [Child to Parent]</h5>
+                <p>{{userData}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <app-footer></app-footer>
